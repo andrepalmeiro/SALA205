@@ -1,0 +1,317 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  background-color: #FFCCCC;
+  font-family: Geneva, Arial, Helvetica, sans-serif;
+  margin: 0px;
+  max-width: 100%;
+  border: solid;
+  border-color: #FFCCCC;
+  font-size: 100%;
+}
+
+header {
+    background-color: #FF9999;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 0px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+h3 {
+  font-size: 1rem;
+  margin: 0px;
+  text-align: center;
+  color: #FFCC33;
+}
+
+header h2 {
+  margin: 0px;
+}
+
+h4 {
+  color:#FFCC33;
+  background-color: #6b4611;
+  box-shadow: 7px 7px 5px #888888;
+  transform: rotate(-45deg);
+  position: absolute;
+  padding: 0px 150px;
+  top: 50px;
+  left: -120px;
+  text-align: center;
+  font-size: 0.6rem;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+[class*="col-"] {
+  width: 100%;
+}
+
+nav {
+  display: block;
+  width: 100%;
+}
+
+nav a:link, nav a:visited {
+  display: block;
+  border-bottom: 3px solid #ffffff;
+  padding: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 5px;
+}
+
+nav a:hover {
+  color: white;
+  background-color: #FFCC33;
+}
+
+section {
+    display: block;
+    width: 100%;
+    background-color: #FF9999;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #888;
+}
+
+section h2 {
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 1rem;
+}
+
+section p {
+  font-size: 0.9rem;
+}
+
+table {
+  font-size: 0.9rem;
+}
+
+aside {
+  display: none;
+  width: 20%;
+  float: left;
+}
+
+aside h3 {
+  margin: 15px;
+  color: #FFFFFF;
+}
+
+aside p {
+  margin: 15px;
+  color: #777777;
+  font-weight: bold;
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+#container {
+  background-color:  #FFCCCC;
+}
+
+footer {
+  clear: both;
+  display: block;
+  background-color:  #FF9999;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px;
+}
+
+footer h2 {
+  font-size: 0.8rem;
+  color: white;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+
+#tabletPC {
+  display: none;
+}
+svg {
+  width: 40px;
+}
+#menu_icon{
+  display: block;
+  cursor: pointer;
+  padding: 0px;
+  position: absolute;
+  left: 10px;
+  z-index: 1000;
+}
+
+#drawer{
+    display: block;
+    background-color: #CCCCCC;
+    height: 100%;
+    width: 60%;
+    position: absolute;
+    transition: all 0.2s linear;
+    transform: translateX(-100%);
+    top: 0px;
+    border-radius: 10px;
+    opacity: 0.95;
+  }
+
+#drawer.open{
+  transform: translateX(0);
+}
+
+
+.mySlides {
+display:none;
+text-align: center;
+}
+.slideshow-container {
+max-width: 100%;
+position: relative;
+margin: auto;
+text-align: center;
+display: none;
+}
+.dot {
+height: 13px;
+width: 13px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color .5s ease;
+}
+.dotpoints {
+text-align: center;
+position: absolute;
+bottom: 10%;
+left: 45%;
+}
+.active {
+background-color: #FF9999;
+}
+.fade {
+-webkit-animation-name: fade;
+-webkit-animation-duration: 1.5s;
+animation-name: fade;
+animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+@keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+
+/* Tablet */
+
+@media only screen and (min-width: 768px) {
+#menu_icon{
+  display: none;
+}
+#drawer{
+  display: none;
+}
+#tabletPC{
+  display: block;
+}
+
+
+.col-3 {width: 25%; float: left; }
+
+  .col-9 {
+    width: 75%;
+    float: left;
+    padding: 15px;
+  }
+}
+
+
+/* PC */
+
+
+@media only screen and (min-width:900px) {
+  aside {display: block;}
+  .col-2 {width: 16.66%;float: left;}
+  #container {width: 58.33%;}
+
+  .slideshow-container {
+  display: block;
+  }
+}

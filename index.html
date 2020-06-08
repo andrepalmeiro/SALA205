@@ -1,0 +1,211 @@
+<!doctype html>
+<html>
+<head>
+  <title>Sala 205 Oficial</title>
+  <meta name="description" content="HTML tutorial">
+  <meta name="keywords" Content="HTML, CSS, XML, Javascript">
+  <meta name="author" content = "André Palmeiro">
+  <meta http-equiv="refresh" content="30">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"type="text/css" href="css/design.css">
+  </head>
+
+  <!---início do body-->
+<body>
+
+  <header>
+
+    <a id="menu_icon">
+      <svg xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24">
+      <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z" fill="white"/>
+    </svg>
+  </a>
+
+    <div id="drawer">
+      <nav>
+      <a href="#Unordered"> SETLIST</a>
+      <br>
+      <a href="#ordered"> COMATOSE TOUR</a>
+      <br>
+      <a href="#color"> PICS e CORES</a>
+    </nav>
+    </div>
+
+    <h1>SALA 205</h1>
+    <h2>Website oficial</h2>
+    <p>Menu:</p>
+
+  </header>
+
+
+  <nav  id="tabletPC"  class="col-3">
+  <a href="#Unordered"> SETLIST</a>
+  <br>
+  <a href="#ordered"> COMATOSE TOUR</a>
+  <br>
+  <a href="#color"> PICS e CORES</a>
+</nav>
+
+    <div id="container" class="col-9">
+    <section class="slideshow-container">
+    <h2>NOVIDADES</h2>
+    <article class="mySlides" class="fade">
+    <figure>
+    <img src="imagens/figura1.jpg">
+    <figcaption>Album "Quarentena" a caminho!</figcaption>
+    </figure>
+    </article>
+    <article class="mySlides" class="fade">
+    <figure>
+    <img src="imagens/figura2.jpg">
+    <figcaption>Sala 205 confirmados no Nos Alive!</figcaption>
+    </figure>
+    </article>
+    <article class="mySlides" class="fade">
+    <figure>
+    <img src="imagens/figura3.jpg">
+    <figcaption>Membros integrantes irreconhecíveis</figcaption>
+    </figure>
+    </article>
+    <div class="dotpoints">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    </div>
+    </section>
+
+
+<section>
+  <a name="Unordered">
+  <h2> SETLIST </h2>
+  <i>A setlist que te faz chorar por menos</i>
+  <ul>
+    <li> (INTRO) Estou num coma </li>
+    <li> Palhaço </li>
+    <li> Parassol </li>
+    <li> Não Tenho Casa </li>
+    <li> Pita Corada </li>
+    <li> Faroese </li>
+    <li> Há Um A1</li>
+    <li> Duarte (Porque Choras?) </li>
+    <li> Eu Tenho Ar Inteligente </li>
+    <li> Calças Beje </li>
+    <li> Massinhas de Gatinhos </li>
+    <li> O Bar </li>
+   </ul>
+</section>
+
+<section>
+   <a name="ordered">
+   <h2> COMATOSE TOUR </h2>
+   <i> Não temos casa nem teto </i>
+   <ol>
+     <li><u> 22 junho - Musicbox </u></li>
+     <li><u> 24 junho - Titanic surmer </u></li>
+     <li><u> 27 junho - Sabotage </u></li>
+     <li><u> 10 julho - Nos Alive </u></li>
+     <li><u> 12 julho - Eselx </u></li>
+     <li><u> 15 julho - MAAT</u></li>
+     <li><u> 30 fevereiro 2021 - Casa do Duarte</u></li>
+   </ol>
+</section>
+
+<section>
+   <a name="color">
+   <h2>PICS e CORES</h2>
+   <p> Los recuerdos</p>
+   <img src = "http://www.theodora.com/gif4/html_colors.gif">
+   <p>
+   <img src="https://deusmelivro.com/wp-content/uploads/2019/07/20190713_NOS_ALIVE_IDLES_JOAOSILVA_3.jpg">
+   </p>
+   <p>
+   <img src = "https://www.silentradio.co.uk/wp-content/uploads/2019/04/idles33.jpg">
+   </p>
+</section>
+
+<section>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ial1pDy3wBs"
+frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+</section>
+
+<section>
+   <table border="1px">
+     <th colspan="3"> Heading </th>
+     <tr>
+       <td> Column 1 </td>
+       <td> Column 2 </td>
+       <td> Column 3 </td>
+     </tr>
+     <tr>
+       <td rowspan="4"> Cell Spanning in 3 Rows (2nd and 3rd merged ) </td>
+       <td rowspan="3"> Cell Spanning in 2 Rows (1st and 2nd Cellmerged ) </td>
+       <td> 1st Cell </td>
+     </tr>
+     <tr>
+       <td> 2nd Cell </td>
+     </tr>
+     <tr>
+       <td> 3rd Cell </td>
+     </tr>
+     <tr>
+       <td> 3rd Cell </td>
+       <td> 4th Cell </td>
+     </tr>
+   </table>
+</section>
+</div>
+
+<aside class="col-2">
+  <h3> Aside </h3>
+  <p> Contratem-nos </p>
+
+</aside>
+
+<footer>
+  <h2> Developed by sala205 registered </h2>
+</footer>
+
+<script>
+let slideIndex = 0;
+showSlides();
+function showSlides() {
+let i = null;
+let slides = document.getElementsByClassName("mySlides");
+let dots = document.getElementsByClassName("dot");
+for (i = 0; i < slides.length; i++) {
+slides[i].style.display = "none";
+}
+slideIndex++;
+if (slideIndex> slides.length) {slideIndex = 1}
+for (i = 0; i < dots.length; i++) {
+dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";
+dots[slideIndex-1].className += " active";
+setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+
+let menu_icon = document.querySelector('#menu_icon');
+let container = document.querySelector("#container");
+let drawer = document.querySelector('#drawer');
+
+menu_icon.addEventListener('click', function (e) {
+
+  drawer.classList.toggle('open');
+  e.stopPropagation();
+
+});
+
+container.addEventListener('click', function () {
+  drawer.classList.remove('open');
+});
+
+</script>
+
+
+</body>
+<!---fim do body-->
+</html>
